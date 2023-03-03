@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escorpo Variável</title>
+</head>
+<body>
+  <script>
+// <!-- escorpo global -->
+
+var banda1 = 'Metallica'
+
+function fun1(){
+    let banda2 = 'Sepultura'
+console.log(banda1)
+console.log(banda2)
+
+if(true){
+    console.log(banda1)
+    console.log(banda2)
+    let banda3 = 'Lamb of God'
+    console.log(banda3)
+}
+console.log(banda3)
+
+} 
+
+fun1()
+console.log(banda1)
+console.log(banda2)// a banda dois só funciona dentro da funç~sao por só ter sido declarada dentro e não fora tbm
+console.log(banda3)// as variaveis do bloco de função só funcionam se declaradas dentro e com o uso da variavel VAR,funcionando fora só do if,não do de função,con o let ela só funciona só no escopo em que foi criado
+
+
+
+
+  </script> 
+
+</body>
+</html>

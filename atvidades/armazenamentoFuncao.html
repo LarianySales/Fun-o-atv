@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenar função</title>
+</head>
+<body>
+    <!-- criar uma funçao de forma literal -->
+    <script>
+        function fun(){}
+        
+         //armazenar em uma variavel
+         //substituindo o para. por funcione
+         const fun2 = function(){}//função anonima
+
+         //armazenar uma função em um vetor ou Array
+         const array = [function (a,b){returna+b}, fun1, fun2]// primeiro,segundo e terceiro array
+         console.log(array[0(2,3)])
+
+         //armazenar uma função em um atributo de um objeto
+
+         const obj = {}
+         obj.falar = function (){return 'olá'}
+         console,log(obj.falar())
+
+         //pode passar uma função como parametro/argumento de outra função
+         function run(fun){
+            fun()
+         }
+         run(function () {console.log('Executando Função...')})
+
+         function soma(a,b){
+            return function (c){
+                console.log(a+b+c)
+            }
+         }
+         soma(a,b)(3)
+    </script>
+</body>
+</html>
