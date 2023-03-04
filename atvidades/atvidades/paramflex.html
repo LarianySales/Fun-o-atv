@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param Flex</title>
+</head>
+<body>
+    <script>
+        function soma(a, b){
+            return a + b
+        }
+        //forma "normal"
+console.log( soma(1,2))  
+//CUIDADO 
+console.log( soma())   //NAN
+console.log( soma(2))   // SE CRIAR UMA FUNÇÃO QUE ESPERA DOIS PARAMENTROS,POREM SÓ RECEBER UM ELA VAI DAR UM AVISO
+console.log( soma(2,3,4,4,5,6,7,8)) //ELA SÓ VAI PEGAR OS DOIS PARAMETROS QUE PRECISA E VAI IGNORAR OS OUTROS
+console.log(soma(2, 'TESTE'))  // ela vai concatenar
+
+ </script>
+</body>
+</html>

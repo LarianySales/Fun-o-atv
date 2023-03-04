@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1) Escreva um script que recebe as 3 notas de um aluno por parâmetro e uma letra.
+Se a letra for A o procedimento calcula a média aritmética das notas do aluno, se for
+P, a sua média ponderada (pesos: 5, 3 e 2). A média calculada também deve retornar
+por parâmetro. -->
+
+<script>
+    let n1 = parseFloat(prompt("Digite a primeira nota: "))
+    let n2 = parseFloat(prompt("Digite a segunda nota: "))
+    let n3 = parseFloat(prompt("Digite a terceira nota: "))
+    let mediaP =  ((n1 * 5) + (n2 * 3) + (n3 * 2)) / 10 
+    let mediaA = (n1 + n2 + n3) / 3
+    
+ 
+let c = prompt("Qual tipo de média deseja calcular?\n Média pondereada(P)\n Média aritmética(A)")
+let A 
+let P
+let media
+
+
+function calcula(media){
+ if(c === 'P' ){
+    return mediaP
+ }else if(c === 'A'){
+    return mediaA
+ }
+}
+console.log(calcula(media))
+
+</script>
+</body>
+</html>
