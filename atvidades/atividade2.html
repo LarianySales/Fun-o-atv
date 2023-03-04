@@ -11,7 +11,24 @@
 deverá convertê-lo para hora, minutos e segundos. Todas as variáveis devem ser
 passadas como parâmetro, não havendo variáveis globais. -->
 <script>
+    let valor = parseInt(prompt("Digite um valor que será para representar segundos: "))
+    let hora = valor / 60
+    let minutos = valor * 60
+    let segundos = minutos / 60
+
     
+    function converterSegundos(segundos) {
+       return hora
+       return minutos
+       return segundos
+    }
+
+        console.log(`${hora}h  :  ${minutos}m  :  ${segundos}s`);
+
+
+//também resolvi declarar logo as variaveis com os calculos para que no fim só fucasse dentro da função o retorno para o console e não precisasse fazer além,no fim acabei nem usando muito a função além do retorno...irei refazer. 
+
+
 </script>
 </body>
 </html>

@@ -16,27 +16,26 @@ por parâmetro. -->
     let n1 = parseFloat(prompt("Digite a primeira nota: "))
     let n2 = parseFloat(prompt("Digite a segunda nota: "))
     let n3 = parseFloat(prompt("Digite a terceira nota: "))
-    let mediaP, mediaA
+    let mediaP =  ((n1 * 5) + (n2 * 3) + (n3 * 2)) / 10 
+    let mediaA = (n1 + n2 + n3) / 3
     
- let A, P = prompt("Qual tipo de média deseja calcular?\n Média pondereada(P)\n Média aritmética(A)")
-  
-
-    function pon(mediaP, mediaA){
-         if(P){
-            mediaP = ((n1 * 5) + (n2 * 3) + (n3 * 2)) / 10
-            return mediaP
-            
-           
-         }else if( A){
-            mediaA = (n1 + n2 + n3) / 3
-            return mediaA
-            
-         }
-    }
-    document.write(pon(mediaP, mediaA))
-   
+ 
+let c = prompt("Qual tipo de média deseja calcular?\n Média pondereada(P)\n Média aritmética(A)")
+let A 
+let P
+let media
 
 
+function calcula(media){
+ if(c === 'P' ){
+    return mediaP
+ }else if(c === 'A'){
+    return mediaA
+ }
+}
+console.log(calcula(media))
+
+//Declarei as variaveis para receber os dados e as que fariam os calculos ,depois fiz uma função com um comparação de if e else if que serviram para verificar qual tipo de variavel que representa a media foi recebida para retornar o valor resultante do calculo daquela média e usei o console para mostrar o resultado.
 </script>
 </body>
 </html>
